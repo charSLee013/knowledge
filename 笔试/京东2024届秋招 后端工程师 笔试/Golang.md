@@ -24,11 +24,14 @@ func main(){
 ```
 
 A. %
+
 B. %%
+
 C. 编译错误
+
 D. %%%
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 
 这个程序会产生编译错误，因为`fmt.Printf`函数的第一个参数是一个格式化字符串，它需要包含一个或多个占位符，如`%d`, `%s`, ``%f``等，来表示后面的参数的类型和位置。
@@ -93,11 +96,14 @@ func main(){
 ```
 
 A. {612828***1998 张三 1}
+
 B. {612828***1998 张三 99}
+
 C. {123456789 张三 99}
+
 D. {123456789 张三 1}
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 
 这个程序定义了一个`CoderCounter`结构体，它有三个字段：`CardNO`, `RealName`, `Total`。
@@ -115,11 +121,14 @@ D. {123456789 张三 1}
 ## Go语言默认的编码格式是()
 
 A. GBK
+
 B. UTF-8
+
 C. ASCII
+
 D. Unicode
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 
 Go语言默认的编码格式是`UTF-8`，它是一种兼容ASCII的可变长度的编码方式，它可以表示世界上几乎所有的语言字符。
@@ -149,12 +158,15 @@ func main(){
 ```
 
 A. 5
+
 B. 10
+
 C. 编译错误
+
 D. 15
 
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 这个程序使用了defer关键字，它可以延迟一个函数的执行，直到包含它的函数返回。
 在main函数中，调用了defer hello(i)，它会把i的值作为参数传给hello函数，但是不会立即执行hello函数，而是等到main函数结束后再执行。
@@ -180,12 +192,15 @@ return
 ## 在Go语言中，下面能表示"coderA>1 并且 coderA<10"的表达式是（）
 
 A. coderA > 1 & coderA < 10
+
 B. coderA > 1 | coderA < 10
+
 C. coderA > 1 && coderA < 10
+
 D. coder A > 1 || coderA < 10
 
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 在Go语言中，表示逻辑与的运算符是&&，表示逻辑或的运算符是||，而&和|是位运算符，它们对两个整数的每一位进行与或运算。所以，要表示"coderA>1 并且 coderA<10"，需要用coderA > 1 && coderA < 10
 
@@ -209,12 +224,15 @@ func main(){
 ```
 
 A. 0
+
 B. 1
+
 C. 运行错误
+
 D. 编译错误
 
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 这个程序创建了一个空的map，它的键是字符串类型，值是整数类型。
 然后调用了delete函数，删除了键为"h"的元素，但是因为这个map本来就是空的，所以这个操作没有任何效果。
@@ -255,12 +273,15 @@ func main(){
 ```
 
 A. `marshalData := coderResult["result_code"].(float32)
+
 B. `marshalData := coderResult["result_code"].(float64)
+
 C. `marshalData := coderResult["result_code"].(int64)
+
 D. `marshalData := coderResult["result_code"].(int32)
 
 
-<details open>
+<details close>
 <summary>答案解析</summary>
 
 这个程序使用了`json.Unmarshal`函数，它可以把一个JSON格式的字符串转换成一个Go语言的值，存储在coderResult这个map中。
